@@ -1,0 +1,36 @@
+<<!DOCTYPE html>
+<html manifest="demo.appcache">
+<head>
+	<title>Geolocation</title>
+</head>
+<body>
+<div id="demo"></div>
+	<button onclick="getLocation()">Try It</button>
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }
+}
+function showPosition(position) {
+    //x.innerHTML = "Latitude: " + position.coords.latitude + 
+    //"<br>Longitude: " + position.coords.longitude;
+    var a= position.coords.latitude;
+    var b= position.coords.longitude;	
+    if (typeof(Storage) !== "undefined") {
+
+    localStorage.setItem("latitude", a );
+    localStorage.setItem("longitude", b );
+   
+    document.getElementById("local").innerHTML = localStorage.getItem("latitude");
+
+    document.getElementById("local1").innerHTML = localStorage.getItem("longitude");
+}
+}
+</script>
+<p>Latitude:<div id="local" > </div></p>
+<p>Longitude<div id="local1" > </div></p>
+
+</body>
+</html>

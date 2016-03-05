@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5</title>.
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700' rel='stylesheet' type='text/css'>
+	<style>
+	body{
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	padding: 20px;
+	width: 100%;
+	background-color: #FF6347;
+	margin-top: -20px;
+}
+h1{
+	margin-left: 50px;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'Ubuntu', sans-serif;
+	width: 40%;
+}
+nav{
+	width: 60%;
+	float: left;
+	position: absolute;
+	top: 30px;
+	left: 740px;
+}
+ul{
+	list-style: none;
+	float: left;
+}
+ul li{
+	float: left;
+	margin: 5px;
+}
+section{
+	width: 100%;
+}
+article{
+	width: 50%;
+	float: left;
+	margin-left: 40px;
+	margin-top: 20px;
+	line-height: 27px;
+}
+aside{
+	width: 30%;
+	float: left;
+	margin-left: 30px;
+	line-height: 27px;
+	border: 3px dotted C0C0C0;
+	position: absolute;
+	top: 180px;
+	left: 900px;
+}
+footer{
+		width: 100%;
+		background-color: #FF6347;
+		padding: 20px;
+		text-align: center;
+}
+h2{
+	text-align: center;
+}
+.img{
+	position: relative;
+	margin-top: 475px;
+	border-bottom: 3px solid #FF6347;
+	padding-bottom: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+}
+.image{
+	margin-top: 50px;
+	text-align: center;
+	margin-left: 350px;
+	padding-bottom: 18px;
+
+}
+figcaption{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.norm{
+		border-bottom: 3px solid #FF6347;
+		padding-bottom: 20px;
+		font-family: 'Ubuntu', sans-serif;
+		text-transform: uppercase;
+}
+
+.move{
+		margin-left: 350px;	
+		padding-bottom: 30px;
+}
+.move1{
+		margin-left: 570px;
+		padding-bottom: 30px;
+}
+article{
+	border-right: 3px dotted #FF6347;
+}
+aside a{
+	text-decoration: none;
+	color: #483D8B;
+}
+aside a:hover{
+	color: #FF6347;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+nav ul li a:hover{
+	color: white;
+}
+article p{
+	margin-right: 20px;
+	padding-right: 50px;
+}
+
+</style>
+</head>
+<body>
+<header>
+	<h1>LaKkZ PAgE</h1>
+	<nav>
+		<ul>
+		<li><a href="#">Home&nbsp&nbsp&nbsp|</a></li>
+		<li><a href="#">About&nbsp&nbsp&nbsp|</a></li>
+		<li><a href="#">Main&nbsp&nbsp&nbsp|</a></li>
+		<li><a href="#">Content&nbsp&nbsp&nbsp|</a></li>
+		<li><a href="#">Help&nbsp&nbsp&nbsp|</a></li>
+		<li><a href="#">Contact us</a></li>
+	</nav>
+</header>
+<section>
+	<article>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</article>
+	<article>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</article>
+	<aside>
+		<a href="#" target="_blank">Introduction</a><br>
+		<a href="#" target="_blank">Creating HTML File</a><br>
+		<a href="#" target="_blank">Executing a HTML File</a><br>
+		<a href="#" target="_blank">Opening Browser</a><br>
+		<a href="#" target="_blank">Executing Scripts</a><br>
+		<a href="#" target="_blank">Creating HTML File</a><br>
+		<a href="#" target="_blank">Executing a HTML File</a><br>
+		<a href="#" target="_blank">Opening Browser</a><br>
+		<a href="#" target="_blank">Executing Scripts</a><br>
+		<a href="#" target="_blank">Part one over</a><br>
+	</aside>
+</section>
+<h2 class="img"> Image </h2>
+<figure>
+	<img src="1.jpg" alt="light background" class="image">
+	<figcaption>Fig 3.1 Background</figcaption>
+</figure>
+<h2 class="norm"> Audio video </h2>
+<p class="move"><audio controls style="margin-right: 50px;">
+  <source src="Kannala.mp3"  type="audio/mpeg">
+</audio>
+<video width="350" height="280" controls>
+  <source src="1.mp4" type="video/mp4">
+  </video></p>
+  <h2 class="norm"> SVG and Canvas</h2>
+  <p class="move1">
+  <canvas id="myCanvas" width="200" height="100" style="border:3px solid #000000; color: black"></canvas>
+	<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.font = "30px Arial";
+	.fillText("Lakkz",10,50);
+	</script>
+
+
+  <svg width="100" height="100" style="margin-left: 40px;">
+  <circle cx="50" cy="50" r="40"
+  stroke="red" stroke-width="10" fill="black" />
+</svg></p>
+<footer>
+  <p>Designed by: N K Lakshmi Narayanan</p>
+  <p>Contact information: <a href="mailto:laktherock@gmail.com">
+  laktherock@gmail.com</a>.</p>
+</footer>
+</body>
+</html>

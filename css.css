@@ -1,0 +1,22 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	background-color: ;
+	height: 100px;
+	width: 100%;
+}
+h3{
+	font-size: 22px;
+	font-weight: bold;
+	font-family: ;
+	width: 20%;
+}
+nav{
+	width: 60%;
+}
+ul{
+	list-style: none;
+	float: left;
+}
